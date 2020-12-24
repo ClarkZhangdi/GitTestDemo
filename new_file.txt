@@ -1,0 +1,241 @@
+Last login: Thu Dec 24 11:52:36 on ttys001
+zhangdi@zhangdideMBP ~ % ls
+AndroidStudioProjects	Downloads		Pictures
+Applications		Library			Postman
+Desktop			Movies			Public
+Documents		Music
+zhangdi@zhangdideMBP ~ % cd ..
+zhangdi@zhangdideMBP /Users % ls
+Shared	zhangdi
+zhangdi@zhangdideMBP /Users % cd zhangdi 
+zhangdi@zhangdideMBP ~ % ls
+AndroidStudioProjects	Downloads		Pictures
+Applications		Library			Postman
+Desktop			Movies			Public
+Documents		Music
+zhangdi@zhangdideMBP ~ % cd .. 
+zhangdi@zhangdideMBP /Users % ls
+Shared	zhangdi
+zhangdi@zhangdideMBP /Users % open zhangdi 
+zhangdi@zhangdideMBP /Users % ls
+Shared	zhangdi
+zhangdi@zhangdideMBP /Users % cd zhangdi 
+zhangdi@zhangdideMBP ~ % ls
+AndroidStudioProjects	Downloads		Pictures
+Applications		Library			Postman
+Desktop			Movies			Public
+Documents		Music			work
+zhangdi@zhangdideMBP ~ % cd wo
+cd: no such file or directory: wo
+zhangdi@zhangdideMBP ~ % cd work 
+zhangdi@zhangdideMBP work % ls
+zhangdi@zhangdideMBP work % cd ..
+zhangdi@zhangdideMBP ~ % open work 
+zhangdi@zhangdideMBP ~ % ls 
+AndroidStudioProjects	Downloads		Pictures
+Applications		Library			Postman
+Desktop			Movies			Public
+Documents		Music			work
+zhangdi@zhangdideMBP ~ % cd work 
+zhangdi@zhangdideMBP work % cd gitTest 
+zhangdi@zhangdideMBP gitTest % git clone https://github.com/ClarkZhangdi/GitTestDemo.git
+Cloning into 'GitTestDemo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+zhangdi@zhangdideMBP gitTest % ls   
+GitTestDemo
+zhangdi@zhangdideMBP gitTest % cd GitTestDemo 
+zhangdi@zhangdideMBP GitTestDemo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+zhangdi@zhangdideMBP GitTestDemo % clear
+
+zhangdi@zhangdideMBP GitTestDemo % git branch
+* main
+zhangdi@zhangdideMBP GitTestDemo % cd ..
+zhangdi@zhangdideMBP gitTest % ls
+GitTestDemo
+zhangdi@zhangdideMBP gitTest % git clone https://github.com/ClarkZhangdi/GitTestDemo.git git_demo2
+Cloning into 'git_demo2'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+zhangdi@zhangdideMBP gitTest % ls
+GitTestDemo	git_demo2
+zhangdi@zhangdideMBP gitTest % git clone https://github.com/ClarkZhangdi/GitTestDemo.git git_demo
+Cloning into 'git_demo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+zhangdi@zhangdideMBP gitTest % ls 
+GitTestDemo	git_demo	git_demo2
+zhangdi@zhangdideMBP gitTest % cd git_demo
+zhangdi@zhangdideMBP git_demo % ls
+README.md
+zhangdi@zhangdideMBP git_demo % open README.md 
+No application knows how to open file:///Users/zhangdi/work/gitTest/git_demo/README.md (Error Domain=NSOSStatusErrorDomain Code=-10814 "kLSApplicationNotFoundErr: E.g. no application claims the file" UserInfo={_LSLine=1483, _LSFunction=runEvaluator}).
+zhangdi@zhangdideMBP git_demo % ls
+README.md
+zhangdi@zhangdideMBP git_demo % ls
+README.md
+zhangdi@zhangdideMBP git_demo % cd..
+zsh: command not found: cd..
+zhangdi@zhangdideMBP git_demo % cd ..
+zhangdi@zhangdideMBP gitTest % ls
+GitTestDemo	git_demo	git_demo2
+zhangdi@zhangdideMBP gitTest % open git_demo
+zhangdi@zhangdideMBP gitTest % open git_demo
+zhangdi@zhangdideMBP gitTest % cd git_demo
+zhangdi@zhangdideMBP git_demo % open README.md 
+zhangdi@zhangdideMBP git_demo % open README.md 
+zhangdi@zhangdideMBP git_demo % open README.md
+zhangdi@zhangdideMBP git_demo % git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+zhangdi@zhangdideMBP git_demo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+zhangdi@zhangdideMBP git_demo % git add README.md 
+zhangdi@zhangdideMBP git_demo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+
+zhangdi@zhangdideMBP git_demo % git commit
+[main 7595fd5] 本人第一次提交
+ 1 file changed, 2 insertions(+)
+zhangdi@zhangdideMBP git_demo % git log 
+commit 7595fd570fdc506f9263ee80863cf63a273438ee (HEAD -> main)
+Author: zhangdi <zhangdi@onecloud.cn>
+Date:   Thu Dec 24 19:28:50 2020 +0800
+
+    本人第一次提交
+
+commit 71e065e081a286efe50b2a1903ef435fc03dd15c (origin/main, origin/HEAD)
+Author: zd <1017397593@qq.com>
+Date:   Thu Dec 24 18:57:01 2020 +0800
+
+    Initial commit
+zhangdi@zhangdideMBP git_demo % git push origin main
+Username for 'https://github.com': ClarkZhangDi
+Password for 'https://ClarkZhangDi@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 336 bytes | 336.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ClarkZhangdi/GitTestDemo.git
+   71e065e..7595fd5  main -> main
+zhangdi@zhangdideMBP git_demo % cd ../git_demo2 
+zhangdi@zhangdideMBP git_demo2 % git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/ClarkZhangdi/GitTestDemo
+   71e065e..7595fd5  main       -> origin/main
+Updating 71e065e..7595fd5
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+zhangdi@zhangdideMBP git_demo2 % git branch feature1
+zhangdi@zhangdideMBP git_demo2 % git checkout feature1
+Switched to branch 'feature1'
+zhangdi@zhangdideMBP git_demo2 % git branch
+* feature1
+  main
+zhangdi@zhangdideMBP git_demo2 % open README.md 
+zhangdi@zhangdideMBP git_demo2 % git add README.md 
+zhangdi@zhangdideMBP git_demo2 % git commit
+[feature1 c159d40] 虚拟同事的第一个 commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+zhangdi@zhangdideMBP git_demo2 % cd ../git_demo
+zhangdi@zhangdideMBP git_demo % ls
+README.md
+zhangdi@zhangdideMBP git_demo % cd ..
+zhangdi@zhangdideMBP gitTest % open git_demo
+zhangdi@zhangdideMBP gitTest % vim new_file.txt
+zhangdi@zhangdideMBP gitTest % git status
+fatal: not a git repository (or any of the parent directories): .git
+zhangdi@zhangdideMBP gitTest % ls
+GitTestDemo	git_demo	git_demo2
+zhangdi@zhangdideMBP gitTest % cd git_demo
+zhangdi@zhangdideMBP git_demo % vim new_file.txt
+zhangdi@zhangdideMBP git_demo % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+zhangdi@zhangdideMBP git_demo % ls 
+README.md
+zhangdi@zhangdideMBP git_demo % vim new_file.txt
+
+test
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+~                                                                                                                                    
+-- INSERT --
